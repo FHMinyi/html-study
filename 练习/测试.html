@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+            list-style-type: cjk-ideographic;
+            /* list-style-position: outside; */
+            /* list-style-image: url(./尚硅谷前端基础笔记/代码/2_CSS2/images/video.gif); */
+            /* list-style: cjk-decimal outside url(./尚硅谷前端基础笔记/代码/2_CSS2/images/video.gif); */
+        }
+        li {
+            background-color: rgba(102, 204, 255, 0.555);
+        }
+        table {
+            border:2px solid #6cf;
+            width: 500px;
+            table-layout: fixed;
+            border-spacing: 1px;
+            /* border-collapse: collapse; */
+            empty-cells: show;
+            caption-side: bottom;
+            text-align: center;
+            color: black;
+            /* background-color: rgba(102, 204, 255, 0.555); */
+            background-image: url(./尚硅谷前端基础笔记/代码/2_CSS2/images/bg.gif);
+
+
+            
+
+        }
+        td,th {
+            border: 3px solid orange;
+            
+        }
+        thead>tr>th:first-of-type {
+            width: 50px;
+        }
+        body {
+            background-image: url(./res/-3a8ad4927f98b53b.jpg);
+            background-attachment: fixed;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        /* 鼠标相关 */
+        body {
+            cursor: url("./res/AppStarting.png"), pointer;
+        }
+
+        #a {
+            background-color: orange;
+        }
+        #b {
+            background-color: red
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>人员信息</caption>
+        <thead>
+            <tr>
+                <th>序号</th>
+                <th>姓名</th>
+                <th>年龄</th>
+                <th>性别</th>
+                <th>政治面貌</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>张三</td>
+                <td>18</td>
+                <td>男</td>
+                <td>党员</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>李四</td>
+                <td>19</td>
+                <td>女</td>
+                <td>团员</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>王五</td>
+                <td>20</td>
+                <td>男</td>
+                <td>群众</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>赵六</td>
+                <td>21</td>
+                <td></td>
+                <td>党员</td>
+            </tr>
+        </tbody>
+    </table>
+    <textarea id="contents" rows="4" cols="50"></textarea>
+    <br>
+    <span id="a">123</span><br>
+    <div id="b">456</div>
+    <pre><textarea style="font-size: 13px; height: 25em; width: 40em;">
+        Since the introduction of chatGPT-3 in late 2022, the concept of AI has re-emerged in the public eye and quickly become the hottest topic." The topic of how to correctly use AI has also repeatedly appeared in people's field of vision. In my opinion, we should use AI properly in the following ways.
+
+First, AI is the machine that makes us learn more efficiently. We can use AI as a learning tool to support course work and research, such as using AI to obtain materials and organize notes.
+
+Second, we need to learn to turn AI into a productivity tool. The use of AI in programming projects can help us quickly implement code and improve work efficiency.
+
+Last but not least, the use of AI should be governed by academic integrity and ethics. We shouldn't use AI-generated content directly because it could spread misinformation. Nor can we rely on AI for plagiarism, which would violate academic integrity.
+
+In short, we should use AI to improve the efficiency of our work and learning, rather than breaking the rules, so that AI can be used correctly.
+    </textarea></pre>
+
+    <style>
+        
+        .first#d1 {
+            background-color: skyblue;
+        }
+        .first#d2 {
+            background-color: lightgreen;
+        }
+        .first#d3 {
+            background-color: lightcoral
+        }
+        a {
+            
+            display: block;
+            width: 9em;
+            height: 2em;
+            font-size: 20px;
+            background-color: lightgray;
+            text-decoration: none;
+
+        }
+        a:hover {
+            color: red;
+        }
+    </style>
+    <div class="first" id="d1">你好1</div>
+    <div class="first" id="d2">你好2</div>
+    <div class="first" id="d3">你好3</div>
+    <hr>
+    <a href="https://www.baidu.com" >百度</a>
+    <a href="https://www.bilibili.com">哔哩哔哩</a>
+    <a href="https://www.zhihu.com">知乎</a>
+    <hr>
+
+    <style>
+        #tes {
+            width: 400px;
+            height: 400px;
+            padding: 20px;
+            background-color: red;
+
+            border: 10px dashed rgba(102, 204, 255, 0.808) ;
+            margin: 30px;
+        }
+    </style>
+    <div id="tes">这是一段文字</div>
+    <!-- 盒子大小 == content +  padding + border-->
+
+
+     <hr>
+     <style>
+        div.box {
+            background-color: lightblue;
+            height: 200px;
+            min-width: 600px;
+            max-height: 400px;
+        }
+     </style>
+    <div class="box">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis pariatur molestiae explicabo omnis cumque consequatur similique enim ea molestias quod error aliquid ut quas voluptates odit, ipsa saepe veritatis illo!
+    </div>
+    <hr>
+    <style>
+        div.defineBox {
+            height: 200px;
+            background-color: gray;
+            margin: 30px;
+            border: 8px dashed black;
+            padding: 2px;
+        }
+    </style>
+    <div class="defineBox">你好啊</div>
+    <hr>
+    <style>
+        div.paddingBox {
+            background-color:#6cf;
+            width: 400px;
+            height: 400px;
+            /* padding-right: 40px;
+            padding-left: 20px;
+            padding-top: 30px;
+            padding-bottom: 50px */
+            
+            padding: 10px 20px;  /* 上下 左右 */
+            /* padding: 30px 20px 50px 40px; 上 右 下 左  */
+            /* padding: 30px 20px 50px; 上 左右 下  */
+        }
+
+        span.paddingBox {
+            background-color: orange;
+            padding: 10px;
+            display: block;
+        }
+    </style>
+    <div class="paddingBox">你好啊</div>
+    <hr>
+    <span class="paddingBox">我很好</span>
+
+    <hr>
+    <style>
+        div.borderBox {
+            width: 400px;
+            height: 400px;
+            background-color: lightblue;
+            border-style: solid;
+            border-width: 10px 20px 30px;
+            border-color: red green  yellow;
+        }
+    </style>
+    <div class="borderBox">你好啊</div>
+    <hr>
+    <style>
+        div.marginBox {
+            width: 100px;
+            height: 100px;
+            border: solid 10px;
+            border-color: black blue red orange;
+            background-color: lightblue;
+            overflow: auto;
+        }
+    </style>
+    <div class="marginBox">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis laudantium in impedit fugit officia pariatur ea iusto necessitatibus nisi facere consectetur obcaecati debitis, incidunt voluptas officiis sunt, suscipit, perspiciatis aperiam!</div>
+
+    <hr>
+    <style>
+        .ourter {
+            width: 400px;
+            height: 400px;
+            background-color: rgba(173, 216, 230, 0.767);
+            padding: 50px;
+        }
+        .inner {
+            height: 300px;
+            width: 300px;
+            background-color: rgba(255, 0, 0, 0.5);
+            margin: 20px;
+        }
+    </style>
+    <div class="ourter">
+        <div class="inner"></div>
+    </div>
+    <hr>
+    
+
+    <style>
+        .autoBox {
+            width: 200px;
+            height: 200px;
+        }
+        
+        .autoBox#d2 {
+            margin-top: -20px;
+            background-color: rgba(255, 0, 0, 0.514);
+        }
+        .autoBox#d1 {
+            background-color: rgba(173, 216, 230, 0.836);
+            margin-bottom: 20px;
+        }
+    </style>
+    <div class="autoBox" id="d1">123</div>
+    <div class="autoBox" id="d2">123</div>
+    <div di="d1"></div>
+    <hr>
+    <style>
+        .outer {
+            width: 400px;
+            /* height: 400px; */
+            background-color: rgba(173, 216, 230, 0.767);
+            /* border: 1px ; */
+            overflow: auto;
+        }
+
+        .iner#d1 {
+            margin-top: 30px;
+            height: 100px;
+            width: 100px;
+            background-color: rgba(29, 208, 214, 0.5);
+            margin-bottom: 30px;
+        }            
+        .iner#d2 {
+            height: 100px;
+            width: 100px;
+            background-color: rgba(206, 190, 48, 0.5);
+            margin-bottom: 30px;
+            margin-top: 30px;
+        }
+        .iner.d3 {
+            height: 100px;
+            width: 100px;
+            background-color: rgba(48, 206, 114, 0.5);
+            display: inline-block;
+            margin-right: 20px;
+            visibility: hidden;
+        }
+        .iner.d4 {
+            height: 100px;
+            width: 100px;
+            background-color: rgba(180, 48, 206, 0.5);
+            display: inline-block;
+            margin-left: 20px;
+        }
+    </style>
+    </style>
+    <div class="outer">
+        <div class="iner" id="d1"></div>
+        <div class="iner" id="d2"></div>
+        <hr>
+        <div class="iner d3"></div><div class="iner d4"></div>
+    </div>
+    </div>
+    <hr>
+    <style></style>
+    <div ></div>
+
+
+
+
+    <script>
+        let links = document.querySelectorAll("a");
+        links.forEach(link => {
+            link.setAttribute("target", "_blank");
+        })
+//         document.getElementById("contents").value = "Since the introduction of chatGPT-3 in late 2022, the concept of AI has re-emerged in the public eye and quickly become the hottest topic.\" The topic of how to correctly use AI has also repeatedly appeared in people's field of vision. In my opinion, we should use AI properly in the following ways.\n\
+// \n\
+// First, AI is the machine that makes us learn more efficiently. We can use AI as a learning tool to support course work and research, such as using AI to obtain materials and organize notes.\n\
+// \n\
+// Second, we need to learn to turn AI into a productivity tool. The use of AI in programming projects can help us quickly implement code and improve work efficiency.\n\
+// \n\
+// Last but not least, the use of AI should be governed by academic integrity and ethics. We shouldn't use AI-generated content directly because it could spread misinformation. Nor can we rely on AI for plagiarism, which would violate academic integrity.\n\
+// \n\
+// In short, we should use AI to improve the efficiency of our work and learning, rather than breaking the rules, so that AI can be used correctly.\n"
+    </script>
+</body>
+</html>
